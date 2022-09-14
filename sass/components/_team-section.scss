@@ -13,9 +13,9 @@
     border-radius: 0px 0px 4px 4px;
     margin-right: 30px;
 
-&:nth-child(4) {
-    margin-right: 0px;
-}
+    &:nth-child(4) {
+        margin-right: 0px;
+    }
 }
 
 .our-team__foto {
@@ -44,51 +44,9 @@
     margin-bottom: 16px;
 }
 
-/* Тень в разделе наша команда  */
 
 .our-team__item {
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12),
         0px 1px 1px rgba(0, 0, 0, 0.14),
         0px 2px 1px rgba(0, 0, 0, 0.2);
 }
-
-/* Декоративные ел. в разделе наша команда */
-
-.icon-teams {
-    @extend %centeredflex;
-      margin-bottom: 30px;
-}
-
-.icon-teams__item {
-
-    width: 44px;
-    height: 44px;
-    margin-right: 10px;
-
-}
-
-.icon-teams__link {
-   @extend %centeredflex;
-    fill: #AFB1B8;
-    width: 100%;
-    height: 100%;
-    border-radius: 50%;
-
-    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-
-    &:nth-child(4) {
-    margin-right: 0px;
-}
-
-    &:hover,
-    &:focus {
-    fill: $primary-white-color;
-    background-color: $accent-color;
-}
-}
-
-.icon-teams__icon {
-    margin-right: 0px;
-}
-

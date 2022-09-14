@@ -1,5 +1,4 @@
-/* Подчеркивание текущей страници в шапке 
-   */
+
 .contacts__link.current::after {
     content: "";
     display: block;
