@@ -6,20 +6,19 @@
      padding-top: 200px;
      text-align: center;
 
-/* Фон и декор. елементы в разделе "заказать услугу" */
-    & {
-        max-width: 1600px;
-        height: 600px;
-        background-image: url(../imeges/img.jpg);
-        @extend %marginAuto;
-       
-        background-position: center;
-        background-repeat: no-repeat;
-        background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4),
-                rgba(47, 48, 58, 0.4)),
-            url(../imeges/img.jpg);
-    }
-
+    /* Фон и декор. елементы в разделе "заказать услугу" */
+        & {
+            max-width: 1600px;
+            height: 600px;
+            background-image: url(../imeges/img.jpg);
+            @extend %marginAuto;
+    
+            background-position: center;
+            background-repeat: no-repeat;
+            background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4),
+                    rgba(47, 48, 58, 0.4)),
+                url(../imeges/img.jpg);
+        }
  }
 .section {
     padding-top: 94px;
@@ -65,3 +64,4 @@
  }
 
 }
+

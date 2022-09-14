@@ -1,5 +1,3 @@
-/* Наша команда */
-
 .comand {
     background-color: $select-button-color;
     align-items: center;
@@ -20,8 +18,6 @@
 }
 }
 
-
-
 .our-team__foto {
     width: 270px;
     margin-top: 0px;
@@ -40,7 +36,7 @@
 }
 
 .our-team__specialty {
-    color: var(--titel-text-color);
+    color: $titel-text-color;
     font-size: 16px;
     line-height: 1.18;
     text-align: center;
@@ -59,10 +55,8 @@
 /* Декоративные ел. в разделе наша команда */
 
 .icon-teams {
-    display: flex;
-    margin-bottom: 30px;
-    justify-content: center;
-    align-items: center;
+    @extend %centeredflex;
+      margin-bottom: 30px;
 }
 
 .icon-teams__item {
@@ -74,30 +68,27 @@
 }
 
 .icon-teams__link {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+   @extend %centeredflex;
     fill: #AFB1B8;
     width: 100%;
     height: 100%;
     border-radius: 50%;
 
     transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1),
-        background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
-}
-
-.icon-teams__link:nth-child(4) {
+    &:nth-child(4) {
     margin-right: 0px;
 }
 
-
-.icon-teams__link:hover,
-.icon-teams__link:focus {
-    fill: var(--primary-white-color);
-    background-color: var(--accent-color);
+    &:hover,
+    &:focus {
+    fill: $primary-white-color;
+    background-color: $accent-color;
+}
 }
 
 .icon-teams__icon {
     margin-right: 0px;
 }
+
